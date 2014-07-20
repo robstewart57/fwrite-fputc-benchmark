@@ -48,7 +48,7 @@ int main(int argc, char **argv){
   fclose(fwrite_out_all);
   end = clock();
   time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-  printf("fwrite time write all at once:\t %f\n",time_spent);
+  printf("fwrite time write all at once:\t\t %f\n",time_spent);
 
 
   /* measure fwrite time */
@@ -61,7 +61,7 @@ int main(int argc, char **argv){
   fclose(fwrite_out);
   end = clock();
   time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-  printf("fwrite time one byte at a time:\t %f\n",time_spent);
+  printf("fwrite time one byte at a time:\t\t %f\n",time_spent);
 
   /* measure fwrite time, also using fseek */
   cnt = 0;
@@ -74,7 +74,7 @@ int main(int argc, char **argv){
   fclose(fwrite_out_fseek);
   end = clock();
   time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-  printf("fwrite time one byte at a time:\t %f\n",time_spent);
+  printf("fwrite+fseek time one byte at a time:\t %f\n",time_spent);
 
   /* measure fputc time */
   begin = clock();
@@ -84,7 +84,7 @@ int main(int argc, char **argv){
   fclose(fputc_out);
   end = clock();
   time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-  printf("fputc time one byte at a time:\t %f\n",time_spent);
+  printf("fputc time one byte at a time:\t\t %f\n",time_spent);
 
   return 0;
 }

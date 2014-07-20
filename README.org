@@ -8,8 +8,8 @@ unsigned char values, one at a time.
 #+BEGIN_SRC
 $ gcc -o fwrite-vs-fputc benchmark.c
 $ ./fwrite-vs-fputc 
-fwrite time write all at once:	 0.011099
-fwrite time one byte at a time:	 0.513641
-fwrite time one byte at a time:	 30.635445
-fputc time one byte at a time:	 0.235022
+fwrite time write all at once:		 0.013345
+fwrite time one byte at a time:		 0.518286
+fwrite+fseek time one byte at a time:	 30.313188
+fputc time one byte at a time:		 0.230410
 #+END_SRC
