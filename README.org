@@ -1,0 +1,4 @@
+* Simple fputc vs fwrite comparison
+
+This is a simple benchmark of fputc vs fwrite for writing an array of
+unsigned char values, one at a time.
