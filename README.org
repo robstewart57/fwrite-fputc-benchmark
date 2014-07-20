@@ -2,3 +2,12 @@
 
 This is a simple benchmark of fputc vs fwrite for writing an array of
 unsigned char values, one at a time.
+
+*** Compiling and running
+
+#+BEGIN_SRC
+$ gcc -o benchmark-fwrite-fputc benchmark.c 
+$ ./benchmark-fwrite-fputc 
+fwrite time: 30.465202
+fputc time: 0.228985 
+#+END_SRC
